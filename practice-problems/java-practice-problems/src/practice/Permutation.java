@@ -6,9 +6,9 @@ public class Permutation {
         backtrack(nums, new ArrayList<>(), result);
         return result;
     }
-    private void backtrack(int[] nums,
-                           List<Integer> current,
-                           List<List<Integer>> result) {
+    public void backtrack(int[] nums,
+                          List<Integer> current,
+                          List<List<Integer>> result) {
         if (current.size() == nums.length) {
             result.add(new ArrayList<>(current));
             return;
